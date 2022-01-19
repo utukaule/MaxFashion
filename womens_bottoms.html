@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+<script>
+
+var womensData = [
+    {
+      image_url:
+        "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010738788-Blue-MIDBLUE-1000010738788-22122021_01-2100.jpg",
+      name: "MAX Stonewashed Flared Jeans",
+      price: 1299,
+    },
+    {
+      image_url:
+        "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000009744375-Blue-LightBlue-1000009744375-12162020_01-2100.jpg",
+      name: "MAX Solid Skinny Jeans - Eco Wash",
+      price: 649,
+    },
+    {
+      image_url:
+        "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000009744388-Grey-Grey-1000009744388-12162020_01-2100.jpg",
+      name: "MAX Stonewashed Skinny Fit Jeans - Eco Wash",
+      price: 649,
+    },
+    {
+      image_url:
+        "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000009734422-Black-Black-1000009734422-12162020_01-2100.jpg",
+      name: "MAX Solid Cropped Leggings",
+      price: 299,
+    },
+    {
+      image_url:
+        "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010824741-Green-Oliveg-1000010824741-11112021_01-2100.jpg",
+      name: "MAX Solid Baggy Fit Jeans",
+      price: 1299,
+    },
+    {
+      image_url:
+        "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010749329-Blue-Midblue-1000010749329-11112021_01-2100.jpg",
+      name: "MAX Solid Elasticated Jeggings",
+      price: 999,
+    },
+    {
+      image_url:
+        "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000009734301-White-White-1000009734301_01-2100.jpg",
+      name: "MAX Solid Knitted Leggings",
+      price: 349,
+    },
+    {
+      image_url:
+        "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000009734301-Red-Red-1000009734301-12162020_01-2100.jpg",
+      name: "MAX Solid Ankle-Length Leggings",
+      price: 349,
+    },
+    {
+      image_url:
+        "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010240218-Grey-Grey-1000010240218-9152021_01-2100.jpg",
+      name: "MAX Stonewashed Skinny Fit Jeans",
+      price: 1299,
+    },
+    {
+      image_url:
+        "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000009744362-Blue-MidBlue-1000009744362-12162020_01-2100.jpg",
+      name: "MAX Solid Skinny Fit Jeans - Eco Wash",
+      price: 649,
+    },
+    {
+      image_url:
+        "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010927860-Black-BLACK-1000010927860-22122021_01-2100.jpg",
+      name: "MAX Printed A-Line Midi Skirt",
+      price: 999,
+    },
+    {
+      image_url:
+        "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010519018-Blue-Lightblue-1000010519018-9012021_01-2100.jpg",
+      name: "MAX Solid Elasticated Jeggings",
+      price: 999,
+    },
+    {
+      image_url:
+        "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010411096-Black-BLACK-1000010411096-15122021_01-2100.jpg",
+      name: "MAX Solid High Rise Culottes",
+      price: 999,
+    },
+    {
+      image_url:
+        "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000009734301-Beige-Skin-1000009734301-12162020_01-2100.jpg",
+      name: "MAX Solid Ankle-Length Leggings",
+      price: 349,
+    },
+    {
+      image_url:
+        "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010730025-Black-BLACK-1000010730025-29122021_01-2100.jpg",
+      name: "MAX Solid High-Waist Treggings",
+      price: 799,
+    },
+    {
+      image_url:
+        "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010749329-Blue-Darkblue-1000010749329-11112021_01-2100.jpg",
+      name: "MAX Solid Elasticated Jeggings",
+      price: 999,
+    },
+    {
+      image_url:
+        "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000009734301-Pink-Fuchsia-1000009734301-12162020_01-2100.jpg",
+      name: "MAX Solid Ankle-Length Leggings",
+      price: 349,
+    },
+    {
+      image_url:
+        "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010738938-Black-Black-1000010738938-11302021_01-2100.jpg",
+      name: "MAX Solid Skinny Fit High-Waist Treggings",
+      price: 1399,
+    },
+    {
+      image_url:
+        "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010730069-Black-BLACK-1000010730069-22122021_01-2100.jpg",
+      name: "MAX Solid Treggings",
+      price: 899,
+    },
+    {
+      image_url:
+        "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000009734301-Blue-Navy-1000009734301_01-2100.jpg",
+      name: "MAX Solid Knitted Leggings",
+      price: 349,
+    },
+    {
+      image_url:
+        "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010749329-Blue-Lightblue-1000010749329-11112021_01-2100.jpg",
+      name: "MAX Solid Elasticated Jeggings",
+      price: 999,
+    },
+   
+  ];
+
+  localStorage.setItem("womensData", JSON.stringify(womensData));
+
+</script>
