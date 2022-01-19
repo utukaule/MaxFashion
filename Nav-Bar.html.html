@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+
+    <!-- --------------------------------------------------------------------------------------- -->
+
+    <script src="https://kit.fontawesome.com/629044acfa.js" crossorigin="anonymous"></script>
+
+
+    <!-- -------------------------------------------------------------------------------------- -->
+    <!-- <link rel="stylesheet" href="nav.css" /> -->
+    <!-- ----------------------------------------------------------------------------------------------------- -->
+    
+<style>
+
+
+#container{
+    width: 100%;
+}
+
+#top{
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+  
+  
+}
+.topleft{
+    width: 40%;
+    display: flex;
+    padding: 10px;
+    font-size: 18px;
+    justify-content: space-around;
+   /* border: 1px solid orangered; */
+}
+ #nav {
+    display: flex;   
+    background-color: rgb(247,248,247);
+  }
+  #max {
+    color: rgb(48,58,178);
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:600;
+    padding: 0px 30px 0px 30px;
+    /* border: 1px solid red; */
+  }
+
+  #navsearch{
+      /* border: 1px solid purple; */
+      padding: 15px 10px 0px 10px ;
+    
+  }
+  input{
+    font-size: 15px;
+    padding: 10px;
+    width: 400px;
+    background-color: rgb(236,237,235);
+    border: 0px;
+  }
+  #navleft {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+   padding: 0px 10px 0px 10px ;
+    font-size: 20px;
+    /* border: 1px solid green; */
+  }
+  #navleft>div{
+      margin: 0px 20px 0px 20px;
+      padding: 20px 15px 20px 15px;
+      /* border: 1px solid tomato; */
+  }
+ /* #navleft >div:hover {
+      background-color: white;
+      color: rgb(48,58,178); 
+ } */
+
+ #navleft >div:hover {
+  background-color: white;
+  color: rgb(48,58,178); 
+}
+  #navright {
+    display: flex;
+    font-size: 20px;
+    /* border: 1px solid green; */
+    width: 80%; 
+    justify-content: right;
+
+  }
+
+  #navright>div{
+     /* border: 1px solid orangered; */
+     margin: 20px 0px 20px 0px;
+     padding: 0px 30px 0px 30px;   
+  }
+
+
+  #topright {
+    width: 40%;
+    display: flex;
+    padding: 10px;
+    font-size: 15px;
+    justify-content: right;
+    /* border: 1px solid yellowgreen; */
+  }
+   #topright>div{
+     /* border: 1px solid orangered; */
+     padding: 0px 30px 0px 30px; 
+  } 
+.signup:hover{
+    color:  rgb(48,58,178) ;
+}
+
+#bottom{
+   /* border: 1px solid blue; */
+   padding: 10px 10px 10px 0px;
+   display: flex;
+}
+#bottom>div{
+     /* border: 1px solid orangered; */
+     padding: 0px 30px 0px 30px; 
+     font-size: 20px;
+  } 
+
+
+
+
+
+
+</style>
+
+  </head>
+<body>
+    <div id=  "container" >
+
+       <div id = "top">
+           <div class="topleft">
+               <div> <i class="fas fa-truck"></i>  Free Shipping</div>
+               <div> <i class="fas fa-store"></i>  Return to Store</div>
+               <div> <i class="fas fa-store"></i>  Click & Collect</div>
+           </div>
+           <div id = "topright"> 
+                <div onclick="window.location.href='Downloadapp.html'">Download Our Apps</div>
+                <div onclick="window.location.href='Storelocator.html'" style="border-left: 1px solid gray;">Store Locator</div>
+                <div onclick="window.location.href='Help.html'" style="border-left: 1px solid gray;">Help</div>
+           </div>
+           
+
+       </div>
+     
+    <!-- -------------------------------------------------------------------------------------------->
+        <div id="nav">
+               <div id ="max">
+                     <div >ma<span style="color: red;">x</span></div>
+               </div>
+               <div id="navleft">
+                   <div onclick="window.location.href='men.html'">Men</div>
+                   <div onclick="window.location.href='women.html'">Women</div>
+                   <div onclick="window.location.href='Girls.html'">Girls</div>
+                   <div onclick="window.location.href='boysdata.html'">Boys</div>
+                </div>
+                <div id =  navsearch>
+                   <input type="search"  placeholder="what are you looking for ? " >
+                </div>
+                <div id = "navright"> 
+                    <div class = "signup" onclick="window.location.href='signup-signin.html'">sign Up-sign In</div>
+                    <div onclick="window.location.href='Basket.html'" style="border-left: 1px solid gray;">Basket <i class="fas fa-shopping-basket"></i></div>
+                </div>
+        </div>
+    <!-- -------------------------------------------------------------------------------------------------- -->
+         <div id = "bottom">
+                <div onclick="window.location.href='Tops.html'">Tops</div>
+                <div onclick="window.location.href='Bottom.html'">Bottoms</div>
+                <div style="border-left: 1px solid gray;">More</div>
+         </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+<script>
+//   localStorage.setItem("name", "Masai School");
+</script>
