@@ -1,0 +1,347 @@
+#promo_strip_heading{
+    background-color: rgb(48,58,178);
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+/* -----------------------------------------------ship container */
+
+#ship_container{
+    width: 75%;
+    margin: auto;
+    
+}
+#ship_container>div{
+    margin: 80px 0px 50px 0px;
+    width: 100%;
+}
+#ship_container>div>img{
+    width: 100%;
+}
+@media only screen and (min-width:401px) and (max-width:900px){
+    #ship_container{
+        width: 90%;
+        margin: auto;
+        
+    }
+    #ship_container>div{
+        margin: 80px 0px 50px 0px;
+        width: 100%;
+    }
+    #ship_container>div>img{
+        width: 100%;
+    }
+}
+/* --------------------------------------------shop container */
+
+#shop_container{
+    width: 75%;
+    margin: auto;
+}
+#shop_container>h1{
+    margin-bottom: 30px;
+}
+#shop_container>hr{
+    margin: 50px 0px;
+}
+#shop_by_category{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6,15%);
+    grid-template-rows: auto auto;
+    justify-content: space-evenly;
+}
+#shop_by_category>div{
+    width: 100%;
+}
+#shop_by_category>div>img{
+    width: 100%;
+}
+#shop_by_category>div>h5{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+/*--------------------------------------- component_container */
+#content_container{
+    width: 75%;
+    margin: auto;
+}
+#content_container>h1{
+    margin-bottom: 30px;
+}
+#content_container>hr{
+    margin: 50px 0px ;
+}
+/* --------------------------------------------budget */
+#budget_box{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:auto;
+    grid-gap: 20px;
+}
+#budget_box>div{
+    width: 100%;
+}
+#budget_box>div>img{
+    width: 100%;
+}
+/* ---------------------------------------------fusion */
+#fusion_box{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: auto;
+}
+#fusion_box>div{
+    width: 100%;
+}
+#fusion_box>div>img{
+    width: 100%;
+}
+/* ------------------------------------------------must have */
+#must_haves_box{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: auto;
+}
+#must_haves_box>div{
+    width: 100%;
+}
+#must_haves_box>div>img{
+    width: 100%;
+}
+/* ---------------------------------------------youth store*/
+#youth_store_box{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows:auto;
+}
+#youth_store_box>div{
+    width: 100%;
+}
+#youth_store_box>div>img{
+    width: 100%;
+}
+/* ---------------------------------------------trending box */
+#trending_box{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: auto;
+}
+#trending_box>div{
+    width: 100%;
+}
+#trending_box>div>img{
+    width: 100%;
+}
+/* ---------------------------------------------you may also know */
+#also_like_box{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    grid-template-rows:auto;
+}
+#also_like_box>div{
+    width: 100%;
+}
+#also_like_box>div>img{
+    width: 100%;
+}
+/* ---------------------------------------------gifting box */
+#gift_zone_box{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows:auto;
+}
+#gift_zone_box>div{
+    width: 100%;
+}
+#gift_zone_box>div>img{
+    width: 100%;
+}
+/* ---------------------------------------------connect with us */
+#connect_box{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows:auto;
+}
+#connect_box>div{
+    width: 100%;
+}
+#connect_box>div>img{
+    width: 100%;
+}
+
+/* ---------------------------------------------------------bottom */
+
+#bottom{
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+}
+#left{
+    width: 50%;
+}
+#right{
+    width: 30%;
+    margin-left: 15%;
+}
+.head{
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+}
+.para{
+    font-family: sans-serif;
+    font-size: 16px;
+    color: grey;
+}
+.input{
+    margin-top: 20px;
+    line-height: 50px;
+    width: 60%;
+    padding-left: 20px;
+    background-color: rgb(240, 240, 240);
+    font-size: 18px;
+    border: none;
+}
+.button{
+    margin-top: 20px;
+    line-height: 50px;
+    width: 30%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    border: none
+}
+#img_div{
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+#img_div>div{
+    width: 45%;
+    height:60px;
+}
+.img{
+    width: 100%;
+    height: 60px;
+}
+
+/* ----------------------------------------------------bottom 2 */
+
+#bottom_2{
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto auto auto auto auto;
+}
+
+#bottom_2>div>h3{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+#bottom_2>div>p{
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+/* ------------------------------------------------contact section */
+#contact_section{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#left_box{
+    display: flex;
+    width: 75%;
+}
+.left_child{
+    width: 30%;
+    display: flex;
+}
+.icon{
+    display: flex;
+    width: 20%;
+    height: 50px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.text p:nth-child(1){
+    color: grey;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.text p:nth-child(2){
+    font-size: 14px;
+    margin: 0px 10px;
+}
+
+#right_box{
+    display: flex;
+    width: 15%;
+    flex-direction: row-reverse;
+}
+.right_child{
+    width: 100%;
+    display: flex;
+    font-size: 30px;
+    justify-content: space-evenly;
+}
+
+/* --------------------------------------copyright */
+
+#copyright{
+    width: 75%;
+    margin: auto;
+    display: flex;
+}
+#logo{
+width: 100px;
+margin: 0 0 20px 0;
+}
+#logo h1{
+    color: rgb(48,58,178);
+    font-weight: bolder;
+    margin: 0px;
+}
+#logo h1 span{
+    color: red;
+}
+#copy_text{
+    margin: 0px 20px;
+}
+#copy_text p{
+    margin: 0px;
+    font-size: 12px;
+    color: grey;
+}
+
