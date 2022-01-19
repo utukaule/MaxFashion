@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boys</title>
+    <style>
+/*      
+        #main {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(6,550px);
+            grid-gap: 45px;
+            width: 80%;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        }
+img{
+    width: 100%;
+    height: 70%;
+}
+h1{
+    margin: 20px 0px 10px 10px;
+}
+h3{
+    margin: 0px 0px 10px 10px;
+}
+
+        .inline {
+            display: inline-block;
+            margin-right: 60px;
+        }
+
+        .line {
+            /* text-decoration: line-through; */
+            /* display: inline-block;*/
+            /* margin-right: 20px; */
+        }
+        /* #shadow{
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+            /* padding: 30px; */
+            /* border-radius: 20px; */
+          
+        } */ */
+
+    </style>
+</head>
+
+<body>
+
+    <div id="main">
+
+    </div>
+</body>
+
+</html>
+<script>
+    var boysTopData = [
+        {
+            image_url:
+                "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010440067-Red-Burgundy-1000010440067-9152021_01-2100.jpg",
+            name: "MAX Textured Corduroy Shirt",
+            price: 699,
+
+        },
+      
+        {
+            image_url:
+                "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010416048-Red-Maroon-1000010416048-10282021_01-2100.jpg",
+            name: "MAX Typographic Print Crew Neck T-shirt",
+            price: 299,
+
+        },
+        {
+            image_url:
+                "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010232654-Multicolour-M-1000010232654-9012021_01-2100.jpg",
+            name: "MAX Colourblocked Polo T-shirt",
+            price: 399,
+        },
+        {
+            image_url:
+                "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010308436-Yellow-Yellow-1000010308436-8182021_01-2100.jpg",
+            name: "MAX Colourblock Sleeves Polo ",
+            price: 575,
+
+        },
+        {
+            image_url:
+                "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010308445-Green-Green-1000010308445-9012021_01-2100.jpg",
+            name: " MAX Printed Polo Neck T-shirt",
+            price: 369,
+
+        },
+        {
+            image_url:
+                "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010593328-Multicolour-M-1000010593328-10072021_01-2100.jpg",
+            name: "MAX Colourblocked Full Sleeves Casual Shirt",
+            price: 549,
+
+        },
+        {
+            image_url:
+                "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010693214-Multicolour-M-1000010693214-22122021_01-2100.jpg",
+            name: "MAX Striped Polo T-shirt ",
+            price: 569,
+
+        },
+        {
+            image_url:
+                "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010688598-White-WHITE-1000010688598-22122021_01-2100.jpg",
+            name: "MAX Striped Polo T-shirt",
+            price: 599,
+
+        },
+        {
+            image_url:
+                "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010693880-Blue-NAVY-1000010693880-15122021_01-2100.jpg",
+            name: "MAX Printed Casual Shirt",
+            price: 699,
+
+        },
+        {
+            image_url:
+                "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010415597-Black-Black-1000010415597-10072021_01-2100.jpg",
+            name: "MAX Typographic Print Crew Neck T-shirt",
+            price: 420,
+
+        },
+        {
+            image_url:
+                "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010689016-Multicolour-M-1000010689016-8122021_01-2100.jpg",
+            name: "MAX Colourblocked Regular Fit Casual Shirt",
+            price: 820,
+
+        },
+        {
+            image_url:
+                "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010416037-Green-Oliveg-1000010416037-10282021_01-2100.jpg",
+            name: "MAX Printed Crew Neck T-shirt",
+            price: 599,
+        },
+        {
+       
+            image_url:
+                "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010232654-Multicolour-M-1000010232654-9012021_01-2100.jpg",
+            name: "MAX Colourblocked Polo T-shirt",
+            price: 399,
+
+
+        },
+        {
+            image_url:
+                "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010693133-Green-GREEN-1000010693133-8122021_01-2100.jpg",
+            name: "MAX Printed Crew Neck T-shirt",
+            price: 899,
+
+        },
+        {
+            image_url:
+                "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010191209-Blue-Blue-1000010191209-10132021_01-2100.jpg",
+            name: "MAX Printed Crew Neck T-shirt",
+            price: 779,
+
+        },
+        {
+            image_url:
+                "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010693124-Yellow-YELLOW-1000010693124-8122021_01-2100.jpg",
+            name: "MAX Printed Crew Neck T-shirt",
+            price: 1019,
+
+        },
+        {
+            image_url:
+                "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010689016-Multicolour-M-1000010689016-8122021_01-2100.jpg",
+            name: "MAX Typographic Print Crew Neck T-shirt",
+            price: 519,
+
+        },
+        {
+            image_url:
+                "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010782899-Green-Olive-1000010782899-22122021_01-2100.jpg",
+            name: "MAX Printed Crew Neck T-shirt",
+            price: 575,
+
+        },
+        {
+            image_url:
+                "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010417148-Blue-RoyalBlue-1000010417148-10282021_01-2100.jpg",
+            name: "MAX Printed Crew Neck T-shirt",
+            price: 399,
+
+        },
+        {
+            image_url:
+                "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010607124-Multicolour-M-1000010607124-9032021_01-2100.jpg",
+            name: "MAX Printed Crew Neck T-shirt",
+            price: 749,
+
+        },
+        {
+            image_url:
+                "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010745553-Yellow-YELLOW-1000010745553-29122021_01-2100.jpg",
+            name: "MAX Printed Crew Neck T-shirt",
+            price: 149,
+
+        },
+   
+
+        
+        {
+            image_url:
+                "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010191297-Green-Oliveg-1000010191297-9072021_01-2100.jpg",
+            name: "MAX Printed Crew Neck T-shirt",
+            price: 499,
+
+        },
+
+    ];
+
+    // localStorage.setItem("BoysTop", JSON.stringify( boysTopData));
+
+
+
+    var boysbottomData = [
+        {
+            image_url:
+               "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010688466-Blue-NAVY-1000010688466-15122021_01-2100.jpg",
+            name: "MAX Printed Drawstring Waist Joggers",
+            price: 699,
+
+        },
+        {
+            image_url:
+     "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010284780-Green-Oliveg-1000010284780-7012021_01-2100.jpg",
+            name: " MAX Solid Woven Shorts",
+            price: 399,
+
+        },
+        {
+            image_url:
+        "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010508344-Blue-BLUE-1000010508344-15122021_01-2100.jpg",
+            name: "MAX Dark Washed Slim Fit Jeans",
+            price: 299,
+
+        },
+        {
+            image_url:
+                "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010232654-Multicolour-M-1000010232654-9012021_01-2100.jpg",
+            name: "MAX Colourblocked Polo T-shirt",
+            price: 399,
+        },
+        {
+            image_url:
+         "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010192320-Green-Oliveg-1000010192320-7222021_01-2100.jpg",
+            name: "MAX Camouflage Print Elasticated Cargo Trousers",
+            price: 899,
+
+        },
+        {
+            image_url:
+            "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010416807-Green-Oliveg-1000010416807-10202021_01-2100.jpg" ,
+            name: "MAX Printed Elasticated Knit Joggers",
+            price: 369,
+
+        },
+        {
+            image_url:
+           "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010692953-Blue-NAVY-1000010692953-22122021_01-2100.jpg" ,
+            name: "MAX Striped Elasticated Shorts",
+            price: 549,
+
+        },
+        {
+            image_url:
+            "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010692971-Blue-BLUE-1000010692971-8122021_01-2100.jpg",
+            name: "MAX Printed Elasticated Knit Joggers",
+            price: 569,
+
+        },
+        {
+            image_url:
+          "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010747874-Blue-LIGHTBLUE-1000010747874-15122021_01-2100.jpg",
+            name: "MAX Printed Elasticated Knit Joggers",
+            price: 599,
+
+        },
+        {
+            image_url:
+         "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010191935-Black-Black-1000010191935-8052021_01-2100.jpg" ,
+            name: "MAX Printed Drawstring Waist Track Pant",
+            price: 699,
+
+        },
+        {
+            image_url:
+          "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010415476-Blue-Darkblue-1000010415476-11042021_01-2100.jpg" ,
+            name: "MAX Stonewashed Slim Fit Jeans",
+            price: 420,
+
+        },
+        {
+            image_url:
+            "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010415487-Blue-Blue-1000010415487-10072021_01-2100.jpg",
+            name: "MAX Stonewashed Slim Fit Jeans",
+            price: 820,
+
+        },
+        {
+            image_url:
+            "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010192221-Grey-Grey-1000010192221_01-2100.jpg" ,
+            name: "MAX Camouflage Print Shorts",
+            price: 599,
+        },
+        {
+            image_url:
+            "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010416818-Red-Burgundy-1000010416818-10282021_01-2100.jpg",
+            name: "MAX Printed Elasticated Joggers",
+            price: 575,
+
+        },
+        {
+            image_url:
+            "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010692962-Grey-GREY-1000010692962-8122021_01-2100.jpg" ,
+            name: "MAX Printed Elasticated Joggers",
+            price: 599,
+
+        },
+        {
+            image_url:
+           "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010693808-Green-OLIVE-1000010693808-29122021_01-2100.jpg",
+            name: "MAX Printed Jogger Trousers",
+            price: 379,
+
+        },
+        {
+            image_url:
+          "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010693781-Black-BLACK-1000010693781-29122021_01-2100.jpg",
+            name: "MAX Solid Jogger Trousers",
+            price: 219,
+
+        },
+        {
+            image_url:
+                "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010689016-Multicolour-M-1000010689016-8122021_01-2100.jpg",
+            name: "MAX Stonewashed Slim Fit Jeans",
+            price: 519,
+
+        },
+        {
+            image_url:
+            "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010284699-Grey-Grey-1000010284699-8052021_01-2100.jpg",
+            name: "MAX Printed Full-Length Trousers",
+            price: 575,
+
+        },
+        {
+            image_url:
+           "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010416576-Blue-Midblue-1000010416576-9152021_01-2100.jpg",
+            name: "MAX Stonewashed Slim Fit Jeans",
+            price: 399,
+
+        },
+        {
+            image_url:
+           "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010690380-Blue-NAVY-1000010690380-8122021_01-2100.jpg",
+            name: "MAX Printed Joggers",
+            price: 749,
+
+        },
+        {
+            image_url:
+           "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010415531-Black-Black-1000010415531-11042021_01-2100.jpg",
+            name: "MAX Solid Slim Fit Jeans",
+            price: 849,
+
+        },
+        {
+            image_url:
+           "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010191660-Red-Red-1000010191660-8272021_01-2100.jpeg",
+            name: "MAX Printed Elasticated Shorts",
+            price: 620,
+
+        },
+        {
+            image_url:
+           "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010693034-Yellow-YELLOW-1000010693034-8122021_01-2100.jpg",
+            name: "MAX Printed Shorts",
+            price: 779,
+
+        },
+        {
+            image_url:
+            "https://lmsin.net/cdn-cgi/image/h=345,w=345,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010693043-Black-BLACK-1000010693043-15122021_01-2100.jpg",
+            name: "MAX Printed Elasticated Shorts",
+            price: 499,
+
+        },
+
+    ];
+
+
+
+    // localStorage.setItem("boysTopData", JSON.stringify(boysTopData));
+    // var returnData = JSON.parse(localStorage.getItem("boysTopData"));
+
+
+    //     returnData.map(function (elem) {
+    //     var div = document.createElement("div")
+    //     div.setAttribute("id","shadow")
+    //     var image = document.createElement("img");
+    //     image.setAttribute("src", elem.image_url)
+
+    //     var div2 = document.createElement("h1")
+    //     div2.textContent = elem.price
+    //     var para = document.createElement("h3");
+    //     para.textContent = elem.name;
+
+      
+    //     div2.setAttribute("class", "inline")
+    //     var div1 = document.createElement("div")
+    //     // var button = document.createElement("button")
+    //     // button.textContent = "MOVE TO CART"
+    //     // div1.append(button)
+
+        
+    //     div.append(image,  div2,para, div1)
+    //     document.querySelector("#main").append(div)
+    // })
+   
+</script>
