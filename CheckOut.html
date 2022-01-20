@@ -7,10 +7,13 @@
     <script src="https://kit.fontawesome.com/629044acfa.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <style>
-  
+   body{
+    display: flex;
+   }
         #container{
             border: 1px solid red;
             width: 60%;
+           
         }
         #box{
             border: 1px solid red;
@@ -68,15 +71,32 @@
         
         #leftbox{
             width:40%;
-            border: 1px solid orangered;
+            /* border: 1px solid orangered; */
         }
         #topbox{
             padding: 10px;
-            border: 1px solid yellowgreen;
+            margin: 10px;
+            /* border: 1px solid yellowgreen; */
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
         }
         #topbox>div{
             padding: 10px;
             border: 1px solid tomato;
+        }
+        #bottombox{
+
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            /* border: 1px solid red; */
+            padding: 50px;
+            grid-gap: 20px;
+            height: 90px;
+          
+        }
+        #bottombox>img{
+            width: 80px;
         }
     </style>
 </head>
@@ -266,25 +286,50 @@
         <div>
             <h1 style="color: gray;">Your Order Summery</h1>
         </div>
-        <div>
-            <div id = "image">
+        <div style="display: flex;">
+            <div id = "image" style="margin: 0px 30px 0px 30px;">
                 <img src="https://lmsin.net/cdn-cgi/image/h=150,w=150,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010017402-Black-Black-1000010017402-4092021_01-2100.jpg" alt="img">
             </div>
             <div id="text">
-                 <p>Max</p>
+                 <p  style="color:gray;font-size: 20px;">Max</p>
                  <p>MAX Textured Lace-Up Sports Shoes</p>
+                 <div style="display: flex;justify-content: space-around;">
+                     <h2 style="color:gray;font-weight: normal;margin: 0px;">Qty :<span style="color: rgb(48, 48, 48);">1</span></h2>
+                     <h2 style="color:gray;font-weight: normal;margin:0px;">Price :<span style="color: rgb(48, 48, 48);">856</span></h2>
+                </div>
             </div>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div>
+            <div style="display: flex;justify-content: space-between;">
+                <h1 style="color:rgb(48, 48, 48);font-weight: normal;margin: 0px;">Subtotal:</h1>
+                <h1 style="color:gray;font-weight: normal;margin:0px;"><i class="fas fa-rupee-sign"></i>  <span style="color: rgb(48, 48, 48);">856</span></h1>
+           </div>
+        </div>
+        <div>
+            <div style="display: flex;justify-content: space-between;">
+                <h1 style="color:rgb(48, 48, 48);font-weight: normal;margin: 0px;">Standard Ground Shipping:</h1>
+                <h1 style="color:gray;font-weight: normal;margin:0px;"><i class="fas fa-rupee-sign"></i>  <span style="color: rgb(48, 48, 48);">856</span></h1>
+           </div>
+           <p style="color: green;font-size: 20px;">( 2-3 business days )</p>
+        </div>
+        <div>
+            <div style="display: flex;justify-content: space-between;">
+                <h1 style="color:rgb(48, 48, 48);font-weight: normal;margin: 0px;">Total:</h1>
+                <h1 style="color:gray;font-weight: normal;margin:0px;"><i class="fas fa-rupee-sign"></i>  <span style="color: rgb(48, 48, 48);">856</span></h1>
+           </div>
+        </div>
 
     </div>
+    <div id ="bottombox">
 
+        <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-visa.png" alt="visa">
+        <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-mc.png" alt="Mscard">
+        <img src="https://i1.lmsin.net/website_images/in/checkout/logo-rupay.svg" alt="Rupay">
+        <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-cash.png" alt="cash">
+        <img src="https://i1.lmsin.net/website_images/in/checkout/logo-wallet.svg" alt="wallet">
+        <img src="https://i1.lmsin.net/website_images/in/checkout/logo-rewards.svg" alt="landmark">
 
-
-
-
+    </div>
 
 
 </div>
