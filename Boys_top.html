@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mens_Top</title>
+    <!-- <link rel="stylesheet" href="women_top.css"> -->
+    <style>
+
+               /* ------------------------------ctg_container */
+#heading{
+    font-family: sans-serif;
+    width: 85%;
+    margin: auto;
+}
+#ctg_container{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+#ctg_container>div{
+    width: 150px;
+    border: 1px solid rgb(240, 240, 240);
+    display: flex;
+    align-items: center;
+    margin: 30px 20px 0px 0px;
+}
+#ctg_container>div:hover{
+   border-color: blue;
+   cursor: pointer;
+}
+#ctg_container>div>img{
+    width: 40px;
+    margin-left: 10px;
+}
+#ctg_container>div>h4{
+    font-family: sans-serif;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: normal;
+}
+/* ---------------------------------------select_container */
+#select_container{
+    width: 100%;
+    background-color: rgb(247,248,247);
+}
+#sub_select_container{
+    width: 85%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+#sub_select_container>select{
+    width: 200px;
+    margin: 20px 20px 0px 0;
+    padding: 10px;
+    font-size: 14px;
+    color: grey;
+    font-family: sans-serif;
+    border: none;
+}
+#sub_select_container>select:hover{
+   
+      cursor: pointer;
+}
+
+/* ----------------------------------------item_container */
+
+#item_container{
+    width: 83%;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto ;
+    grid-gap: 25px;
+}
+
+#item_div:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+    cursor: pointer;
+}
+#item_div>img{
+width: 100%;
+}
+#item_div>h3{
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+}
+#name_div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+}
+#name_div>p{
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-top: 5px;
+    
+}
+#name_div>select{
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: gray;
+    background-color: whitesmoke;
+}
+#btn_div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+#cart_btn{
+    background-color: green;
+    color: white;
+    border: none;
+    line-height: 40px;
+    font-family: sans-serif;
+}
+#wish_btn{
+    background-color: rgb(46, 8, 216);
+    color: white;
+    border: none;
+    line-height: 40px;
+    font-family: sans-serif;
+}
+
+/* --------------------------------meadia query */
+
+@media only screen and (min-width: 0px) and (max-width: 400px){
+    #heading{
+        font-family: sans-serif;
+        width: 100%;
+        margin: auto;
+    }
+    /* ------------------------------ctg_container */
+    #ctg_container{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+       
+    }
+
+    /* -----------------------------select_container----- */
+    #sub_select_container{
+        width: 100%;
+        margin: auto;
+    }
+    /* --------------------------------item_container */
+    #item_container{
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto ;
+        grid-gap: 20px;
+    }
+    
+}
+@media only screen and (min-width: 401px) and (max-width: 900px){
+    #heading{
+        font-family: sans-serif;
+        width: 100%;
+        margin: auto;
+    }
+    /* ------------------------------ctg_container */
+    #ctg_container{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    /* -----------------------------select_container----- */
+    #sub_select_container{
+        width: 100%;
+        margin: auto;
+    }
+    /* --------------------------------item_container */
+    #item_container{
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto ;
+        grid-gap: 20px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <h1 id="heading">Tops</h1>
+    <div id="ctg_container">
+        <div>
+            <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/maxboys-tops-jackets.jpg" alt="ctg1">
+            <h4>Jackets</h4>
+        </div>
+        <div>
+            <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/maxboys-tops-shirts.jpg" alt="ctg2">
+            <h4>Shirts</h4>
+        </div>
+        <div>
+            <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/1maxboys-tops-teesandpolos.jpg" alt="ctg3">
+            <h4>Tees & Polos</h4>
+        </div>
+        <div>
+            <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/maxboys-tops-winterwear.jpg" alt="ctg4">
+            <h4>Winterwear</h4>
+        </div>
+    </div>
+
+    <div id="select_container">
+       <div id="sub_select_container">
+            <select id="price" onchange="price_sort()">
+                <option value="" >Price</option>
+                <option value="low" >low to high</option>
+                <option value="high" >high to low</option>
+            </select>
+    
+            <select name="" id="">
+                <option value="">Type</option>
+            </select>
+    
+            <select name="" id="">
+                <option value="">Style</option>
+            </select>
+    
+            <select name="" id="">
+                <option value="">Design</option>
+            </select>
+    
+            <select name="" id="">
+                <option value="">Size</option>
+            </select>
+    
+    
+            <select name="" id="">
+                <option value="">Color</option>
+            </select>
+    
+            <select name="" id="">
+                <option value="">Sleev Lentgh</option>
+            </select>
+    
+            <select name="" id="">
+                <option value="">Browse</option>
+            </select>
+    
+            <select name="" id="">
+                <option value="">Promotion</option>
+            </select>
+            
+            <select name="" id="">
+                <option value="">Discount Range</option>
+            </select>
+       </div>
+    </div>
+
+    <div id="item_container">
+
+    </div>
+</body>
+</html>
+
+<script>
+    var bucket = JSON.parse(localStorage.getItem("BoysTop")) || [];
+    display(bucket);
+
+    function display(bucket){
+        document.querySelector("#item_container").textContent="";
+        bucket.map(function (item){
+             
+            var item_div = document.createElement("div");
+            item_div.setAttribute("id","item_div");
+            
+            var image = document.createElement("img");
+            image.setAttribute("src",item.image_url);
+
+            var price = document.createElement("h3");
+            price.textContent = item.price;
+
+            var name_div = document.createElement("div");
+            name_div.setAttribute("id", "name_div");
+
+            var name = document.createElement("p");
+            name.textContent = item.name;
+
+            var size = document.createElement("select");
+            
+            var default_opt = document.createElement("option");
+            default_opt.textContent = "Select Size";
+            var opt1 = document.createElement("option");
+            opt1.textContent = "XS";
+            var opt2 = document.createElement("option");
+            opt2.textContent = "S";
+            var opt3 = document.createElement("option");
+            opt3.textContent = "M";
+            var opt4 = document.createElement("option");
+            opt4.textContent = "L";
+            var opt5 = document.createElement("option");
+            opt5.textContent = "XL";
+            var opt6 = document.createElement("option");
+            opt6.textContent = "XXL";
+
+            size.append(default_opt, opt1, opt2, opt3, opt4, opt5, opt6);
+            name_div.append(name,size);
+
+            var btn_div = document.createElement("div");
+            btn_div.setAttribute("id", "btn_div");            
+
+            var cart_btn = document.createElement("button");
+            cart_btn.setAttribute("id", "cart_btn");
+            cart_btn.textContent = "ADD TO BASKET";
+
+            var wish_btn = document.createElement("button");
+            wish_btn.setAttribute("id", "wish_btn");
+            wish_btn.textContent = "ADD TO WISHLIST";
+
+            btn_div.append(cart_btn,wish_btn);
+            item_div.append(image, price, name_div, btn_div);
+            document.querySelector("#item_container").append(item_div);
+
+        });
+    }
+
+    function price_sort(){
+        var price_value = document.querySelector("#price").value;
+
+        if(price_value == "low"){
+            bucket.sort(function (a,b){
+                return a.price - b.price;
+            });
+        }
+        if(price_value == "high"){
+            bucket.sort(function (a,b){
+                return b.price - a.price;
+            });
+        }
+        display(bucket);
+    }
+
+</script>
