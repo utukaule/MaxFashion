@@ -234,12 +234,10 @@
 
 
     /* popup */
-    .main{
+    .main {
       display: grid;
-      grid-template-columns: repeat(2,1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
-    
-
   </style>
 
 </head>
@@ -416,49 +414,73 @@
                   <div class="main">
                     <div class="sub1 w-100 border-end mb-5">
                       <div class="modal-body border-0">
-                        <h5 class="modal-title text-center" style="font-weight: 500;" id="staticBackdropLabel">Log In Now</h5>
-                        <p class="text-center" style="color: grey;font-weight: 300;font-size: 14px;">Enjoy the convenience of a single account across all participating brands</p>
-                        
+                        <h5 class="modal-title text-center" style="font-weight: 500;" id="staticBackdropLabel">Log In
+                          Now</h5>
+                        <p class="text-center" style="color: grey;font-weight: 300;font-size: 14px;">Enjoy the
+                          convenience of a single account across all participating brands</p>
+
                         <div class="mx-auto w-75">
-                          <button class="text-white border-0 w-100 pt-1 pb-1 rounded" style="background-color: #36559C;"><i class=" fab fa-facebook-square"></i> Log In With Facebook</button>
-                          <p class="text-center mt-2" style="color: #c8c9c6;font-size: 10px;margin-bottom: -14px;">Or via email</p>
-                          <form action=""> 
-                          <br> UserName <br>
-                          <input type="text" class="pt-1 pb-1 mb-2" placeholder="Your user name">
-                           <br> <span class="pt-2">Password</span>  <br>
-                          <input type="password" class="pt-1 pb-1 mb-2" placeholder="*************">
-                          <br>
-                          <span ><a href="" style="font-size: 12px;">Forgot Password?</a></span> 
-                          <br >
-                          <input type="submit" style="background-color: #36559C; border: none;color: white;width: 45%;" class="w-70 mt-2 pt-1 pb-1 rounded" value="Log in">
-                        </form>
+                          <button class="text-white border-0 w-100 pt-1 pb-1 rounded"
+                            style="background-color: #36559C;"><i class=" fab fa-facebook-square"></i> Log In With
+                            Facebook</button>
+                          <p class="text-center mt-2" style="color: #c8c9c6;font-size: 10px;margin-bottom: -14px;">Or
+                            via email</p>
+
+
+                          <!-- form 1 -->
+                          <form action="" id="form_one">
+                            <br> User Name <br>
+                            <input type="text" id="user" class="pt-1 pb-1 mb-2 form-control" placeholder="Your user name">
+                            <br> <span class="pt-2">Password</span> <br>
+                            <input type="password" id="pass" class="pt-1 pb-1 mb-2 form-control" placeholder="*************">
+                            <br>
+                            <span><a href="" style="font-size: 12px;">Forgot Password?</a></span>
+                            <br>
+                            <input type="submit" style="background-color: #36559C; border: none;color: white;width: 45%;"
+                              class="w-70 mt-2 pt-1 pb-1 rounded" value="Log in" >
+                          </form>
+
+
+
                         </div>
                       </div>
                     </div>
                     <div class="sub2 w-100 mb-5">
                       <div class="modal-body border-0">
-                        <h5 class="modal-title text-center" style="font-weight: 500;" id="staticBackdropLabel">Sign Up Now</h5>
-                        <p class="text-center" style="color: grey;font-weight: 300;font-size: 14px;">Enjoy the convenience of a single account across all participating brands</p>
-                        
+                        <h5 class="modal-title text-center" style="font-weight: 500;" id="staticBackdropLabel">Sign Up
+                          Now</h5>
+                        <p class="text-center" style="color: grey;font-weight: 300;font-size: 14px;">Enjoy the
+                          convenience of a single account across all participating brands</p>
+
                         <div class="mx-auto w-75">
-                          <button class="text-white border-0 w-100 pt-1 pb-1 rounded" style="background-color: #36559C;"><i class=" fab fa-facebook-square"></i> Sign Up With Facebook</button>
-                          <p class="text-center mt-2" style="color: #c8c9c6;font-size: 10px;margin-bottom: -14px;">Or via email</p>
-                          <form action=""> 
-                          <br>Email <br>
-                          <input type="email" placeholder="Email" class="pt-1 pb-1 mb-2">
-                          <br>User Name <br>
-                          <input type="text" placeholder="User Name" class="pt-1 pb-1 mb-2">
-                           <br> Password <br>
-                          <input type="password" placeholder="*************" class="pt-1 pb-1 mb-2">
-                          <br>
-                          <input type="submit" style="background-color: #36559C; border: none;color: white;width: 45%;" class="w-70 mt-2 pt-1 pb-1 rounded" value="Sign Up">
-                        </form>
+                          <button class="text-white border-0 w-100 pt-1 pb-1 rounded"
+                            style="background-color: #36559C;"><i class=" fab fa-facebook-square"></i> Sign Up With
+                            Facebook</button>
+                          <p class="text-center mt-2" style="color: #c8c9c6;font-size: 10px;margin-bottom: -14px;">Or
+                            via email</p>
+
+
+                          <!-- form 2 -->
+                          <form action="two">
+                            <br>Email <br>
+                            <input type="email" id="new_email" placeholder="Email" class="pt-1 pb-1 mb-2 form-control">
+                            <br>User Name <br>
+                            <input type="text" id="new_user" placeholder="User Name" class="pt-1 pb-1 mb-2 form-control">
+                            <br> Password <br>
+                            <input type="password" id="new_pass" placeholder="*************" class="pt-1 pb-1 mb-2 form-control">
+                            <br>
+                            <input type="submit"
+                              style="background-color: #36559C; border: none;color: white;width: 45%;"
+                              class="w-70 mt-2 pt-1 pb-1 rounded" value="Sign Up"  id="submit_two">
+                          </form>
+
+
                         </div>
-                        
+
                       </div>
                     </div>
                   </div>
-            
+
 
                 </div>
               </div>
@@ -488,6 +510,30 @@
 
 </html>
 
+
 <script>
-//   localStorage.setItem("name", "Masai School");
+  
+  document.querySelector("#form_one").addEventListener('submit',logIn);
+  var data = [];
+
+  function logIn(event){
+    event.preventDefault();
+
+    var user = document.querySelector('#user').value;
+
+    var password = document.querySelector("#pass").value;
+
+    var data_obj = {
+      user_name : user,
+      user_pass : password,
+    };
+
+    data.push(data_obj);
+    console.log(data);
+    
+    localStorage.setItem('local_data',JSON.stringify(data));
+
+  }
+
+
 </script>
