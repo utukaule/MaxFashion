@@ -1,3 +1,6 @@
+*{
+    margin: 0px;
+}
 #promo_strip_heading{
     background-color: rgb(48,58,178);
     color: white;
