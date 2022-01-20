@@ -436,8 +436,7 @@
                             <br>
                             <span><a href="" style="font-size: 12px;">Forgot Password?</a></span>
                             <br>
-                            <input type="submit"
-                              style="background-color: #36559C; border: none;color: white;width: 45%;"
+                            <input type="submit" style="background-color: #36559C; border: none;color: white;width: 45%;"
                               class="w-70 mt-2 pt-1 pb-1 rounded" value="Log in" >
                           </form>
 
@@ -511,21 +510,24 @@
 
 </html>
 
+
 <script>
   
-  document.querySelector("form_one").addEventListener('submit',login);
+  document.querySelector("#form_one").addEventListener('submit',logIn);
   var data = [];
+
   function logIn(event){
     event.preventDefault();
 
-    var user = document.querySelector('user').value;
+    var user = document.querySelector('#user').value;
 
-    var pass = document.querySelector('pass').value;
+    var password = document.querySelector("#pass").value;
 
     var data_obj = {
-      user : user,
-      pass : pass,
-    }
+      user_name : user,
+      user_pass : password,
+    };
+
     data.push(data_obj);
     console.log(data);
     
