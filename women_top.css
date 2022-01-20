@@ -1,0 +1,174 @@
+/* ------------------------------ctg_container */
+#heading{
+    font-family: sans-serif;
+    width: 85%;
+    margin: auto;
+}
+#ctg_container{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+#ctg_container>div{
+    width: 150px;
+    border: 1px solid rgb(240, 240, 240);
+    display: flex;
+    align-items: center;
+    margin: 30px 20px 0px 0px;
+}
+#ctg_container>div>img{
+    width: 40px;
+    margin-left: 10px;
+}
+#ctg_container>div>h4{
+    font-family: sans-serif;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: normal;
+}
+/* ---------------------------------------select_container */
+#select_container{
+    width: 100%;
+    background-color: rgb(247,248,247);
+}
+#sub_select_container{
+    width: 85%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+#sub_select_container>select{
+    width: 200px;
+    margin: 20px 20px 0px 0;
+    padding: 10px;
+    font-size: 14px;
+    color: grey;
+    font-family: sans-serif;
+    border: none;
+}
+
+/* ----------------------------------------item_container */
+
+#item_container{
+    width: 83%;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto ;
+    grid-gap: 20px;
+}
+#item_div:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+}
+#item_div>img{
+width: 100%;
+}
+#item_div>h3{
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+}
+#name_div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+}
+#name_div>p{
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-top: 5px;
+    
+}
+#name_div>select{
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: gray;
+    background-color: whitesmoke;
+}
+#btn_div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+#cart_btn{
+    background-color: green;
+    color: white;
+    border: none;
+    line-height: 40px;
+    font-family: sans-serif;
+}
+#wish_btn{
+    background-color: rgb(46, 8, 216);
+    color: white;
+    border: none;
+    line-height: 40px;
+    font-family: sans-serif;
+}
+
+/* --------------------------------meadia query */
+
+@media only screen and (min-width: 0px) and (max-width: 400px){
+    #heading{
+        font-family: sans-serif;
+        width: 100%;
+        margin: auto;
+    }
+    /* ------------------------------ctg_container */
+    #ctg_container{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    /* -----------------------------select_container----- */
+    #sub_select_container{
+        width: 100%;
+        margin: auto;
+    }
+    /* --------------------------------item_container */
+    #item_container{
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto ;
+        grid-gap: 20px;
+    }
+    
+}
+@media only screen and (min-width: 401px) and (max-width: 900px){
+    #heading{
+        font-family: sans-serif;
+        width: 100%;
+        margin: auto;
+    }
+    /* ------------------------------ctg_container */
+    #ctg_container{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    /* -----------------------------select_container----- */
+    #sub_select_container{
+        width: 100%;
+        margin: auto;
+    }
+    /* --------------------------------item_container */
+    #item_container{
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto ;
+        grid-gap: 20px;
+    }
+}
