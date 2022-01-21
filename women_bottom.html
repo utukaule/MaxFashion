@@ -9,27 +9,39 @@
     <link rel="stylesheet" href="footer.css">
     <script src="https://kit.fontawesome.com/629044acfa.js" crossorigin="anonymous"></script>
 
-    <title>Boys_Top</title>
-   
+    <title>Women_Bottom</title>
+
 </head>
 <body>
-    <h1 id="heading">Tops</h1>
+    <h1 id="heading">Bottoms</h1>
     <div id="ctg_container">
         <div>
-            <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/maxboys-tops-jackets.jpg" alt="ctg1">
-            <h4>Jackets</h4>
+            <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/maxwomen-bottoms-capris.jpg" alt="ctg1">
+            <h4>Capris</h4>
         </div>
         <div>
-            <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/maxboys-tops-shirts.jpg" alt="ctg2">
-            <h4>Shirts</h4>
+            <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/1maxwomen-bottoms-jeansandjeggings.jpg" alt="ctg2">
+            <h4>Jeans & jegings</h4>
         </div>
         <div>
-            <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/1maxboys-tops-teesandpolos.jpg" alt="ctg3">
-            <h4>Tees & Polos</h4>
+            <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/maxwomen-bottoms-leggings.jpg" alt="ctg3">
+            <h4>Leggings</h4>
         </div>
         <div>
-            <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/maxboys-tops-winterwear.jpg" alt="ctg4">
-            <h4>Winterwear</h4>
+            <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/11maxwomen-bottoms-palazzosandculottes.jpg" alt="ctg4">
+            <h4>Palazzos & Culotters</h4>
+        </div>
+        <div>
+            <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/maxwomen-bottoms-shortsandskirts.jpg" alt="ctg5">
+            <h4>Short & Skirts</h4>
+        </div>
+        <div>
+            <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/maxwomen-bottoms-trousersandpants.jpg" alt="ctg6">
+            <h4>Trousers & Pants</h4>
+        </div>
+        <div>
+            <img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/maxwomen-bottoms-trousersandtreggings.jpg" alt="ctg7">
+            <h4>Trousers & Treggings</h4>
         </div>
     </div>
 
@@ -256,17 +268,16 @@
     </div>
 
 
-
 </body>
 </html>
 
 <script>
-    var bucket = JSON.parse(localStorage.getItem("BoysTop")) || [];
-    display(bucket);
+    var arr_data = JSON.parse(localStorage.getItem("womens_bottom_data")) || [];
+    display(arr_data);
 
-    function display(bucket){
+    function display(arr_data){
         document.querySelector("#item_container").textContent="";
-        bucket.map(function (item){
+        arr_data.map(function (item){
              
             var item_div = document.createElement("div");
             item_div.setAttribute("id","item_div");
@@ -325,16 +336,16 @@
         var price_value = document.querySelector("#price").value;
 
         if(price_value == "low"){
-            bucket.sort(function (a,b){
+            arr_data.sort(function (a,b){
                 return a.price - b.price;
             });
         }
         if(price_value == "high"){
-            bucket.sort(function (a,b){
+            arr_data.sort(function (a,b){
                 return b.price - a.price;
             });
         }
-        display(bucket);
+        display(arr_data);
     }
 
 </script>
