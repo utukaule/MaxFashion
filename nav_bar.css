@@ -1,0 +1,116 @@
+* {
+    margin: 0px;
+  }
+
+  #max {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+  }
+
+  #Women_drop {
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  #Women_drop:hover {
+    color: #303AB2;
+    background-color: white;
+    font-size: 14px;
+  } 
+
+  #men_drop {
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  #men_drop:hover {
+    color: #303AB2;
+    font-size: 14px;
+  }
+
+  #girl_drop {
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  #girl_drop:hover {
+    color: #303AB2;
+    font-size: 14px;
+  }
+
+  #boy_drop {
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  #boy_drop:hover {
+    color: #303AB2;
+    font-size: 14px;
+  }
+
+  #singIn {
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  #singIn:hover {
+    color: #303AB2;
+    font-size: 14px;
+  }
+
+  #basket {
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  #nav_bar {
+    background-color: #F7F8F7;
+  }
+
+  #top {
+    background-color: black;
+
+  }
+
+  #above_nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #above_nav>.left>div>a {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  #above_nav>.right>div>a {
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  #max {
+    font-size: 35px;
+    font-weight: 800;
+  }
+
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+
+
+
+  /* popup */
+  .main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
