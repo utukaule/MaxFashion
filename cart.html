@@ -17,6 +17,7 @@
     <style> 
         #subtotal{
             display: flex;
+            
         }
     </style>
 
@@ -28,9 +29,9 @@
         <div>
             <h4>Your Shopping Basket ( <span id="no_items"></span> Items )</h4>
         </div>
-        <div class="mt-5 border border-warning" style="font-size: 12px;">
-            <ul class="pt-1">Get the offer
-                <li> Flat 200 Off on shopping worth 1999 and above. Code- MAX200</li>
+        <div class="mt-5 w-100 mb-5" style="font-size: 12px;border: .5px solid goldenrod;">
+            <ul class="pt-2">Get the offer
+                <li> Flat 200 Off on shopping worth 1999 and above. Code- MAX200</li>  
                 <li>Flat 200 Off on shopping worth 1499 and above. Code- NEW200 (First purchase only)</li>
             </ul>
         </div>
@@ -41,10 +42,10 @@
 
                 <table>
                     <thead class="">
-                        <tr>
+                        <tr class="border-top border-bottom">
                             <td>Item</td>
                             <td class="ps-2">Description</td>
-                            <td>Price</td>
+                            <td class="ps-3">Price</td>
                             <!-- <td>Quantity</td>
                             <td>Total Price</td> -->
                         </tr>
@@ -57,11 +58,24 @@
         
                     </tbody>
                 </table>
+                <hr class="bg-light">
+                <div>
+                    <p>Ways to Pay</p>
+                    <div class="col-3 col-sm-4 col-md-8">
+                        <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-visa.png" style="width: 90px;height: 50px;" class="me-4" alt="">
+                        <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-mc.png" style="width: 60px;height: 50px;" class="me-4" alt="">
+                        <img src="https://i1.lmsin.net/website_images/in/checkout/logo-rupay.svg" style="width: 50px;height: 50px;" class="me-4" alt="">
+                        <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-cash.png" style="width: 90px;height: 30px;" class="me-4" alt="">
+                        <img src="https://i1.lmsin.net/website_images/in/checkout/logo-netbanking.svg" style="width: 90px;height: 30px;" class="me-4" alt="">
+                        <img src="https://i1.lmsin.net/website_images/in/checkout/logo-wallet.svg" style="width: 90px;height: 30px;" class="me-4 mt-4" alt="">
+                        <img src="https://i1.lmsin.net/website_images/in/checkout/logo-rewards.svg" style="width: 90px;height: 30px;" class="me-4 mt-4" alt="">
+                    </div>
+                </div>
             </div>
             <div class="col-12 col-sm-12 col-md-4 border" id="total_price">
                 
                 <div style="display: flex;justify-content: space-between;">
-                    <div >
+                    <div>
                         <p style="color: #8C9196; font-size: 15px;">Subtotal:</p>
                     </div>
                     <div>
@@ -117,6 +131,9 @@
     cart(cartArr);
     function cart(cartArr){
     document.querySelector('tbody').innerHTML = "";
+    document.getElementById('no_items').textContent = cartArr.length || 0;
+    document.querySelector('.subTotal').textContent="₹"+ total || 0;
+    document.querySelector('#subTotal_sum').textContent="₹"+total || 0;
     cartArr.map(function(data,index){
         var tr = document.createElement('tr');
         
@@ -149,12 +166,15 @@
 
         var remove1 = document.createElement('button');
         remove1.textContent = 'Remove';
-        // remove.style.margin = '65px 0px 0px 0px';
-        // remove.style.fontSize = '12px';
-        // remove.style.color = 'grey';
+        remove1.style.margin = '49px 0px 0px 0px';
+        remove1.style.fontSize = '12px';
+        remove1.style.color = 'grey';
+        remove1.style.border = 'none';
         remove1.addEventListener('click',function(){
             deleteItem(index);
         });
+
+        
 
         td2.append(name,color,size,remove1);
 
@@ -164,6 +184,7 @@
         var td3 = document.createElement('td');
         td3.textContent = "₹"+data.price;
         td3.style.verticalAlign = 'Top';
+        td3.style.paddingLeft = '20px'
         td3.style.fontWeight = '500';
 
         tr.append(td1,td2,td3);
@@ -203,9 +224,9 @@
 
     // Delete Item
     function deleteItem(index){
-        console.log(index)
+        // console.log(index)
         cartArr.splice(index,1)
-        console.log(cartArr);
+        // console.log(cartArr);
         localStorage.setItem("cartItems",JSON.stringify(cartArr));
         cart(cartArr);
     }
