@@ -20,7 +20,7 @@
         }
     </style>
 
-    <title>Document</title>
+    <title>Cart</title>
 </head>
 <body>
     <div id="header"></div>
@@ -65,7 +65,7 @@
                         <p style="color: #8C9196; font-size: 15px;">Subtotal:</p>
                     </div>
                     <div>
-                        <p id="subTotal" style="color: #8C9196;font-size: 15px;">₹</p>
+                        <p class="subTotal" style="color: #8C9196;font-size: 15px;">₹</p>
                     </div>
                 </div>
 
@@ -94,11 +94,11 @@
                         <h4>TOTAL</h4>
                     </div>
                     <div>
-                        <p id="subTotal"></p>
+                        <p id="subTotal_sum"></p>
                     </div>
                 </div>
                 <center>
-                    <button class="w-100 border-0 pt-2 pb-2" style="background-color: #303AB2;color: white;">Proceed to Checkout</button>
+                    <button class="w-100 border-0 pt-2 pb-2 rounded" style="background-color: #303AB2;color: white;">Proceed to Checkout</button>
                 </center>
 
 
@@ -113,7 +113,11 @@
 <script>
     var cartArr = JSON.parse(localStorage.getItem('cartItems'));
     // console.log(cartArr);
-    cartArr.map(function(data){
+    
+    cart(cartArr);
+    function cart(cartArr){
+    document.querySelector('tbody').innerHTML = "";
+    cartArr.map(function(data,index){
         var tr = document.createElement('tr');
         
         var td1 = document.createElement('td');
@@ -143,16 +147,16 @@
         size.style.fontSize = '13px'
         size.style.paddingTop = '-10px'
 
-        var remove = document.createElement('p');
-        remove.textContent = 'Remove';
-        remove.style.margin = '65px 0px 0px 0px';
-        remove.style.fontSize = '12px';
-        remove.style.color = 'grey';
-        remove.addEventListener('click',function(){
-            delete(data);
-        })
+        var remove1 = document.createElement('button');
+        remove1.textContent = 'Remove';
+        // remove.style.margin = '65px 0px 0px 0px';
+        // remove.style.fontSize = '12px';
+        // remove.style.color = 'grey';
+        remove1.addEventListener('click',function(){
+            deleteItem(index);
+        });
 
-        td2.append(name,color,size,remove);
+        td2.append(name,color,size,remove1);
 
 
 
@@ -185,6 +189,7 @@
 
 
     }); 
+}
 
     // Total Price
     var total = cartArr.reduce(function(acc,cv){
@@ -192,6 +197,17 @@
     },0)
     // console.log(total);
     // for(var i = 0 ; i < total)
-    document.getElementById('subTotal').textContent="₹"+ total;
+    document.querySelector('.subTotal').textContent="₹"+ total;
+    document.querySelector('#subTotal_sum').textContent="₹"+total;
     document.getElementById('no_items').textContent = cartArr.length;
+
+    // Delete Item
+    function deleteItem(index){
+        console.log(index)
+        cartArr.splice(index,1)
+        console.log(cartArr);
+        localStorage.setItem("cartItems",JSON.stringify(cartArr));
+        cart(cartArr);
+    }
+
 </script>
