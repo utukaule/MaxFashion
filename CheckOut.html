@@ -9,7 +9,7 @@
     <style>
         #bucket{
             width: 90%;
-            border: 1px solid;
+            /* border: 1px solid; */
             display: flex;
             margin: auto;
     
@@ -67,10 +67,11 @@
             margin: 10px 20px 10px 20px;
         }
         #form ,#payment {
-            border:1px solid blue;
+            /* border:1px solid blue; */
             width: 90%;
             margin: auto;
             padding: 20px;
+            border-bottom: 1px solid gray;
         }
 
 
@@ -79,6 +80,7 @@
         #rightbox{
             width:40%;
             /* border: 1px solid green;          */
+             
         }
         #topbox{
             padding: 10px;
@@ -90,14 +92,15 @@
         }
         #topbox>div{
             padding: 10px;
-            border: 1px solid tomato;
+            /* border: 1px solid tomato; */
+            /* border-bottom: 1px solid gray; */
         }
         #bottombox{
 
             display: grid;
             grid-template-columns: repeat(3,1fr);
             grid-template-rows: repeat(3,1fr);
-            border: 1px solid red;
+            /* border: 1px solid red; */
             padding: 50px;
             grid-gap: 20px;
             height: 90px;
@@ -155,7 +158,7 @@
 
     width: 90%;
     margin: auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     
 }
 
@@ -163,32 +166,7 @@
 
 
 
-   @media only screen and (min-width:0px) and (max-width:900px){
-
-    #bucket{
-         
-            border: 1px solid;
-            display: flex;
-            margin: auto;
-            flex-wrap: wrap;
-    
-        }
-         
-        #rightbox{
-
-            width:35%;
-            border: 1px solid green;
-        
-            /* position: fixed; */
-            /* margin-left: 53%; */
-            
-        
-           
-        }
-
-       
-   }
-
+  
         
     </style>
 </head>
@@ -297,7 +275,7 @@
               
                 <h1>Select a Card type</h1>
                 
-                    <div style="display: flex; border: 1px solid red;width: 80%;align-items: center;margin: auto;">
+                    <div style="display: flex;width: 80%;align-items: center;margin: auto;">
                       <input type="radio" id="type1"
                        value="Credit" checked>
                       <label for="cardtype1"style="font-weight: bold;">Credit Card</label>
@@ -374,11 +352,40 @@
         <div id = "rightbox">
             <div id= "topbox">
                 
-                <div>
+                <div style="border-bottom: 1px solid gray;">
                     <h1 style="color: gray;">Your Order Summery</h1>
                 </div>
-                <div style="display: flex;">
-                    <div id = "image" style="margin: 0px 30px 0px 30px;">
+                <div style="height: 300px; overflow: scroll;border-bottom: 1px solid gray;">
+
+
+
+
+
+                    <div class="container " style="width: 100%;">
+                        <div class="row ">
+                            <div class="col-12 col-sm-12 col-md-8 ">
+                
+                                <table>
+                             
+                                    <tbody >
+                                        
+                        
+                                    </tbody>
+                                </table>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    
+
+
+
+
+
+
+
+
+                    <!-- <div id = "image" style="margin: 0px 30px 0px 30px;">
                         <img src="https://lmsin.net/cdn-cgi/image/h=150,w=150,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010017402-Black-Black-1000010017402-4092021_01-2100.jpg" alt="img">
                     </div>
                     <div id="text">
@@ -388,27 +395,62 @@
                             <h2 style="color:gray;font-weight: normal;margin: 0px;">Qty :<span style="color: rgb(48, 48, 48);">1</span></h2>
                             <h2 style="color:gray;font-weight: normal;margin:0px;">Price :<span style="color: rgb(48, 48, 48);">856</span></h2>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div>
-                    <div style="display: flex;justify-content: space-between;">
+                    <!-- <div style="display: flex;justify-content: space-between;">
                         <h1 style="color:rgb(48, 48, 48);font-weight: normal;margin: 0px;">Subtotal:</h1>
                         <h1 style="color:gray;font-weight: normal;margin:0px;"><i class="fas fa-rupee-sign"></i>  <span style="color: rgb(48, 48, 48);">856</span></h1>
-                </div>
-                </div>
-                <div>
+                </div> -->
+
+
+
+
+
+                <div class="col-12 col-sm-12 col-md-4 border" id="total_price">
+                                
+                    <div style="display: flex;justify-content: space-between;border-bottom: 1px solid  #8C9196">
+                        <div >
+                            <p style="color: gray; font-size: 15px;">Subtotal:</p>
+                        </div>
+                        <div>
+                            <p id="subTotal" style="color: gray;font-size: 15px;">₹</p>
+                        </div>
+                    </div>
+    
+                    <div style="display: flex;justify-content: space-between;border-bottom: 1px solid  #8C9196">
+                        <div >
+                            <p style="color: gray;font-size: 15px;"> Standard Ground Shipping:</p>
+                            <p style="color: green;font-size: 15px;">( 2-3 business days )</p>
+                        </div>
+                        <div>
+                            <p  style="color: #00B037;font-size: 15px;">₹99</p>
+                        </div>
+                    </div>
+    
+    
+                    <div style="display: flex;justify-content: space-between;border-bottom: 1px solid  #8C9196">
+                        <div >
+                            <p style="color: gray;font-size: 15px;">Offer Savings:</p>
+                        </div>
+                        <div>
+                            <p  style="color: #00B037;font-size: 15px;"> ₹0</p>
+                        </div>
+                    </div>
+    
+    
                     <div style="display: flex;justify-content: space-between;">
-                        <h1 style="color:rgb(48, 48, 48);font-weight: normal;margin: 0px;">Standard Ground Shipping:</h1>
-                        <h1 style="color:gray;font-weight: normal;margin:0px;"><i class="fas fa-rupee-sign"></i>  <span style="color: rgb(48, 48, 48);">856</span></h1>
+                        <div >
+                            <h4 style = "color: gray;">TOTAL</h4>
+                        </div>
+                        <div>
+                            <p id="Total"></p>
+                        </div>
+                    </div>
+    
                 </div>
-                <p style="color: green;font-size: 20px;">( 2-3 business days )</p>
                 </div>
-                <div>
-                    <div style="display: flex;justify-content: space-between;">
-                        <h1 style="color:rgb(48, 48, 48);font-weight: normal;margin: 0px;">Total:</h1>
-                        <h1 style="color:gray;font-weight: normal;margin:0px;"><i class="fas fa-rupee-sign"></i>  <span style="color: rgb(48, 48, 48);">856</span></h1>
-                </div>
-                </div>
+            
         
             </div>
             <div id ="bottombox">
@@ -476,3 +518,81 @@
 
 </body>
 </html>
+
+
+<script>
+    var cartArr = JSON.parse(localStorage.getItem('cartItems'));
+    // console.log(cartArr);
+    cartArr.map(function(data){
+        var tr = document.createElement('tr');
+     
+        
+        var td1 = document.createElement('td');
+        var image = document.createElement('img');
+      
+        image.style.width = '150px';
+        image.style.height = '150px';
+        image.setAttribute('src',data.image_url);
+        td1.append(image);
+
+        var td2 = document.createElement('td');
+        td2.style.verticalAlign = 'Top';
+        td2.style.paddingLeft = '10px'
+        
+        var name = document.createElement('h5');
+        name.textContent = data.name;
+        name.style.fontSize = '14px';
+        name.style.fontWeight = '700';
+         
+        
+        var logo = document.createElement('p');
+        logo.textContent = "MAX";
+        logo.style.fontSize = '14px'
+        logo.style.margin = '0px 0px 0px 0px'
+        logo.style.color="gray";
+        
+        var price = document.createElement('p');
+        price.textContent = 'Price :' +  data.price;
+        price.style.fontSize = '13px'
+        price.style.paddingTop = '-10px'
+
+    
+
+        td2.append(logo,name,price);
+
+
+        tr.append(td1,td2);
+        document.querySelector("tbody").append(tr);
+
+
+
+        //total price section
+        // var div = document.createElement('div');
+
+        // var div1 = document.createElement('div');
+        // div1.setAttribute('id','subtotal');
+
+        // var div1_one_sub = document.createElement('p');
+        // div1_one_sub.textContent = "subtotal";
+
+        // var div1_one_price = document.createElement('p');
+        // div1_one_price.textContent = "123";
+
+        // div.append(div1_one_sub,div1_one_price);
+
+        // document.getElementById("total_price").append(div);
+
+
+    }); 
+
+    // sub Total Price
+    var subtotal = cartArr.reduce(function(acc,cv){
+        return acc + Number(cv.price)
+    },0)
+    // console.log(total);
+    // for(var i = 0 ; i < total)
+    document.getElementById('subTotal').textContent="₹"+ subtotal;
+    document.getElementById('Total').textContent="₹"+ Number(99+subtotal);
+ 
+
+</script>
