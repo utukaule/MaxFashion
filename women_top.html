@@ -4,10 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
     <title>Women_Top</title>
     <link rel="stylesheet" href="women_top.css">
+
+   
+        <script>
+            $(function () {
+                $("#header").load("Nav_Bar.html");
+                // $("#footer").load("footer.html");
+            });
+        </script>
 </head>
 <body>
+    <div id="header"></div>
     <h1 id="heading">Tops</h1>
     <div id="ctg_container">
         <div>
@@ -91,9 +103,11 @@
 
 <script>
     var arr_data = JSON.parse(localStorage.getItem("womensData")) || [];
+    var cartArr = JSON.parse(localStorage.getItem("cartItems")) || [];
     display(arr_data);
 
     function display(arr_data){
+
         document.querySelector("#item_container").textContent="";
         arr_data.map(function (item){
              
@@ -104,7 +118,7 @@
             image.setAttribute("src",item.image_url);
 
             var price = document.createElement("h3");
-            price.textContent = item.price;
+            price.textContent ="₹" +item.price;
 
             var name_div = document.createElement("div");
             name_div.setAttribute("id", "name_div");
@@ -138,10 +152,16 @@
             var cart_btn = document.createElement("button");
             cart_btn.setAttribute("id", "cart_btn");
             cart_btn.textContent = "ADD TO BASKET";
+            cart_btn.addEventListener('click', function(){
+                addToCart(item);
+            })
+
+
 
             var wish_btn = document.createElement("button");
             wish_btn.setAttribute("id", "wish_btn");
             wish_btn.textContent = "ADD TO WISHLIST";
+            
 
             btn_div.append(cart_btn,wish_btn);
             item_div.append(image, price, name_div, btn_div);
@@ -149,6 +169,15 @@
 
         });
     }
+
+//add to cart process starts
+
+    function addToCart(item){
+        // console.log(item);
+        cartArr.push(item);
+        localStorage.setItem('cartItems',JSON.stringify(cartArr));
+    }
+//add to cart process ends
 
     function price_sort(){
         var price_value = document.querySelector("#price").value;
