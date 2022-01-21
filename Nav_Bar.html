@@ -461,7 +461,7 @@
 
 
                           <!-- form 2 -->
-                          <form action="two">
+                          <form action="" id="form_two">
                             <br>Email <br>
                             <input type="email" id="new_email" placeholder="Email" class="pt-1 pb-1 mb-2 form-control">
                             <br>User Name <br>
@@ -471,7 +471,7 @@
                             <br>
                             <input type="submit"
                               style="background-color: #36559C; border: none;color: white;width: 45%;"
-                              class="w-70 mt-2 pt-1 pb-1 rounded" value="Sign Up"  id="submit_two">
+                              class="w-70 mt-2 pt-1 pb-1 rounded" value="Sign Up">
                           </form>
 
 
@@ -512,28 +512,71 @@
 
 
 <script>
-  
+
+  // Sign Up form
+
+  document.querySelector('#form_two').addEventListener('submit',signUp);
+  data = JSON.parse(localStorage.getItem("New_user_info")) || [];
+
+  function signUp(event){
+    event.preventDefault();
+    // id names
+    // new_email
+    //new_user
+    //new_pass
+
+    var new_email = document.querySelector('#new_email').value;
+    var new_user = document.querySelector('#new_user').value;
+    var new_pass = document.querySelector('#new_pass').value;
+    
+    if((new_email == "") || (new_user == "") || (new_pass == "")){
+      alert('Please fill up all fields');
+    }
+    // if(new_user.length < 5){
+    //   new_user.setAttri
+    //   data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right" 
+    // }
+    // if(new_pass.length < 5){
+    //   alert('Please make your password more strong');
+    // }
+
+
+    // console.log(new_email,new_user,new_pass)
+    var data_obj = {
+      new_email : new_email,
+      new_user : new_user,
+      new_pass : new_pass,
+    };
+
+    data.push(data_obj);
+    localStorage.setItem('New_user_info',JSON.stringify(data));
+    alert("Successfully Signed Up Now Login Again.",window.location.href = 'home.html');
+    
+
+  }
+
+
+  // Login Form 
+
   document.querySelector("#form_one").addEventListener('submit',logIn);
-  var data = [];
+  var regi_user = JSON.parse(localStorage.getItem('New_user_info'));
 
   function logIn(event){
     event.preventDefault();
 
     var user = document.querySelector('#user').value;
-
     var password = document.querySelector("#pass").value;
 
-    var data_obj = {
-      user_name : user,
-      user_pass : password,
-    };
-
-    data.push(data_obj);
-    console.log(data);
-    
-    localStorage.setItem('local_data',JSON.stringify(data));
+    for(var i = 0 ; i < regi_user.length ; i++){
+      if(regi_user[i].new_user == user  && regi_user[i].new_pass == password){
+              //  alert("Hi",regi_user[i].new_user,"Welcome To Max Fashion.");
+               return window.location.href = "home.html";
+            }   
+          }
+          return alert('Wrong credential try again');
 
   }
 
+  // local Storage name --> New_user_info
 
 </script>
