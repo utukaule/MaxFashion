@@ -259,9 +259,12 @@
 
 <script>
     var arr_data = JSON.parse(localStorage.getItem("mens_bottomData")) || [];
+    var cartArr = JSON.parse(localStorage.getItem("cartItems")) || [];
+    var wish_arr = JSON.parse(localStorage.getItem("wish_item")) || [];
     display(arr_data);
 
     function display(arr_data){
+
         document.querySelector("#item_container").textContent="";
         arr_data.map(function (item){
              
@@ -271,14 +274,11 @@
             var image = document.createElement("img");
             image.setAttribute("src",item.image_url);
 
+            var price_div = document.createElement("div");
+            price_div.setAttribute("id", "price_div");
+            
             var price = document.createElement("h3");
-            price.textContent = item.price;
-
-            var name_div = document.createElement("div");
-            name_div.setAttribute("id", "name_div");
-
-            var name = document.createElement("p");
-            name.textContent = item.name;
+            price.textContent ="₹" +item.price;
 
             var size = document.createElement("select");
             
@@ -298,7 +298,11 @@
             opt6.textContent = "XXL";
 
             size.append(default_opt, opt1, opt2, opt3, opt4, opt5, opt6);
-            name_div.append(name,size);
+            price_div.append(price,size);
+
+            var name = document.createElement("p");
+            name.setAttribute("id", "item_name");
+            name.textContent = item.name;
 
             var btn_div = document.createElement("div");
             btn_div.setAttribute("id", "btn_div");            
@@ -306,17 +310,46 @@
             var cart_btn = document.createElement("button");
             cart_btn.setAttribute("id", "cart_btn");
             cart_btn.textContent = "ADD TO BASKET";
+            cart_btn.addEventListener('click', function(){
+                addToCart(item);
+            })
+
+
 
             var wish_btn = document.createElement("button");
             wish_btn.setAttribute("id", "wish_btn");
             wish_btn.textContent = "ADD TO WISHLIST";
+            wish_btn.addEventListener("click", function(){
+                add_to_wishlist(item);
+            })
+            
 
             btn_div.append(cart_btn,wish_btn);
-            item_div.append(image, price, name_div, btn_div);
+            item_div.append(image, price_div, name, btn_div);
             document.querySelector("#item_container").append(item_div);
 
         });
     }
+
+//add to cart process starts
+
+    function addToCart(item){
+        // console.log(item);
+        cartArr.push(item);
+        alert("Item Added successful");
+        localStorage.setItem('cartItems',JSON.stringify(cartArr));
+    }
+//add to cart process ends
+
+
+//---------------------------------------wish-list
+
+function add_to_wishlist(item){
+        wish_arr.push(item);
+        alert("Item Added to WishList");
+        localStorage.setItem('wish_items',JSON.stringify(wish_arr));
+    }
+//--------------------------------------wish-list END
 
     function price_sort(){
         var price_value = document.querySelector("#price").value;

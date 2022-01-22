@@ -18,6 +18,10 @@
     align-items: center;
     margin: 30px 20px 0px 0px;
 }
+#ctg_container>div:hover{
+    border: 1px solid blue;
+    cursor: pointer;
+}
 #ctg_container>div>img{
     width: 40px;
     margin-left: 10px;
@@ -47,7 +51,9 @@
     font-family: sans-serif;
     border: none;
 }
-
+#sub_select_container>select:hover{
+    cursor: pointer;
+}
 /* ----------------------------------------item_container */
 
 #item_container{
@@ -62,32 +68,33 @@
 #item_div:hover{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 10px;
+    border-radius: 10px;
 }
 #item_div>img{
 width: 100%;
 }
-#item_div>h3{
-    font-family: sans-serif;
-    font-weight: bold;
-    margin: 10px 0 10px 0;
-}
-#name_div{
+#price_div{
     display: flex;
     justify-content: space-between;
     margin-top: 0px;
 }
-#name_div>p{
+#price_div>h3{
     font-family: sans-serif;
-    font-size: 14px;
-    margin-top: 5px;
-    
+    font-weight: bold;
+    margin: 10px 0 10px 0;
 }
-#name_div>select{
-    width: 100px;
+#price_div>select{
+    width: 130px;
     height: 30px;
     border: none;
     color: gray;
     background-color: whitesmoke;
+}
+#item_name{
+    font-family: sans-serif;
+    font-size: 15px;
+    color: grey;
+    margin-top: 5px;
 }
 #btn_div{
     display: flex;
@@ -98,15 +105,22 @@ width: 100%;
     background-color: green;
     color: white;
     border: none;
+    border-radius: 4px;
     line-height: 40px;
     font-family: sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+#cart_btn,#wish_btn:hover{
+    cursor: pointer;
 }
 #wish_btn{
     background-color: rgb(46, 8, 216);
     color: white;
     border: none;
+    border-radius: 4px;
     line-height: 40px;
     font-family: sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 /* --------------------------------meadia query */
