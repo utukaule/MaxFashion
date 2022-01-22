@@ -27,10 +27,10 @@
     <div id="header"></div>
     <div class="container mt-5" style="width: 80%;">
         <div>
-            <h4>Your Shopping Basket ( <span id="no_items"></span> Items )</h4>
+            <h4 style="font-weight: 400;">Your Shopping Basket ( <span id="no_items"></span> Items )</h4>
         </div>
         <div class="mt-5 w-100 mb-5" style="font-size: 12px;border: .5px solid goldenrod;">
-            <ul class="pt-2">Get the offer
+            <ul class="pt-2"> <span style="color: #FF5752;">Get the offer</span> 
                 <li> Flat 200 Off on shopping worth 1999 and above. Code- MAX200</li>  
                 <li>Flat 200 Off on shopping worth 1499 and above. Code- NEW200 (First purchase only)</li>
             </ul>
@@ -55,7 +55,7 @@
                     </thead>
                     <tbody >
                         
-        
+                       
                     </tbody>
                 </table>
                 <hr class="bg-light">
@@ -72,14 +72,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-4 border" id="total_price">
+            <div class="col-12 col-sm-12 col-md-4 " id="total_price">
                 
                 <div style="display: flex;justify-content: space-between;">
                     <div>
                         <p style="color: #8C9196; font-size: 15px;">Subtotal:</p>
                     </div>
                     <div>
-                        <p class="subTotal" style="color: #8C9196;font-size: 15px;">₹</p>
+                        <p class="subTotal" style="color: #8C9196;font-size: 15px;">₹ </p>
                     </div>
                 </div>
 
@@ -88,7 +88,7 @@
                         <p style="color: #8C9196;font-size: 15px;"> Standard Ground Shipping:</p>
                     </div>
                     <div>
-                        <p  style="color: #00B037;font-size: 15px;">₹99</p>
+                        <p  style="color: #00B037;font-size: 15px;">₹ Free</p>
                     </div>
                 </div>
 
@@ -98,7 +98,7 @@
                         <p style="color: #8C9196;font-size: 15px;">Offer Savings:</p>
                     </div>
                     <div>
-                        <p  style="color: #00B037;font-size: 15px;"> ₹0</p>
+                        <p  style="color: #00B037;font-size: 15px;">₹ 0</p>
                     </div>
                 </div>
 
@@ -115,6 +115,22 @@
                     <button class="w-100 border-0 pt-2 pb-2 rounded" style="background-color: #303AB2;color: white;">Proceed to Checkout</button>
                 </center>
 
+                <p>
+                    <a class="btn btn-light mt-3 w-100" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <img src="promocode.PNG" alt="" style="float: left;" class="ms-2 me-2"><span style="float: left;">Got a promo/Voucher Code?</span><i class="fa fa-angle-down me-3" style="float: right;"></i> 
+                      </a>
+
+                      <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                            <p>
+                                <input type="text" class="border-0" placeholder="Enter promo code"> <a href="" class="pe-1 border-end" style="text-decoration: none;font-weight: 300;" >Apply</a><a href="" class="ps-1" style="text-decoration: none;">Cancel</a>
+                            </p>
+                        </div>
+                      </div>
+                </p>
+                <p class="mt-3 bg bg-light">
+                    <img src="have_gift_card.PNG" class="ms-4 me-2" alt=""> <span style="font-weight: 300;">Have a Gift Card? Redeem it at checkout.</span>
+                </p>
 
 
             
@@ -141,6 +157,7 @@
         var image = document.createElement('img');
         image.style.width = '130px';
         image.style.height = '150px';
+        image.style.marginBottom = '15px'
         image.setAttribute('src',data.image_url);
         td1.append(image);
 
