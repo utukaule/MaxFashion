@@ -8,8 +8,25 @@
     line-height: 40px;
     margin-bottom: 30px;
 }
+/* -----------------------------------------------shop by age */
+#shop_by_age{
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+#shop_by_age>div{
+    width: 95%;
+}
+#shop_by_age>div>img{
+    width: 100%;
+}
 /* -----------------------------------------------ship container */
-
+/* 
 #ship_container{
     width: 75%;
     margin: auto;
@@ -21,7 +38,7 @@
 }
 #ship_container>div>img{
     width: 100%;
-}
+} */
 /* --------------------------------------------shop container */
 
 #shop_container{
@@ -29,7 +46,7 @@
     margin: auto;
 }
 #shop_container>h1{
-    margin-bottom: 30px;
+    margin: 50px 0 30px 0;
 }
 #shop_container>hr{
     margin: 50px 0px;
@@ -333,10 +350,22 @@ margin: 0 0 20px 0;
 
 @media only screen and (min-width:601px) and (max-width:900px){
     /* ----------------------------ship container */
-    #ship_container{
+    /* #ship_container{
         width: 95%;
         margin: auto;
         
+    } */
+
+    /* ---------------------------------shop by age */
+    #shop_by_age{
+        width: 95%;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        grid-gap: 20px;
     }
     /* ----------------------------shop container */
 
@@ -399,13 +428,25 @@ margin: 0 0 20px 0;
 
 @media only screen and (min-width:0px) and (max-width:600px){
     /* ----------------------------ship container */
-    #ship_container{
+    /* #ship_container{
         width: 100%;
         margin: auto;
     }
     #ship_container>div{
         margin: 20px 0px 20px 0px;
         width: 100%;
+    } */
+
+     /* ---------------------------------shop by age */
+     #shop_by_age{
+        width: 95%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        grid-gap: 10px;
     }
     /* ----------------------------shop container */
 
