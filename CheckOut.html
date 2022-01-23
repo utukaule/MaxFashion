@@ -379,7 +379,7 @@
                           <input type="text" class="form-control w-25 mb-3" style="height: 25px; " > 
                      </div>
                 </div>
-                <Button> <i class="fas fa-lock"></i> Pay Now</Button>
+                <a href="#" class = "ps-5 pt-2 pe-5 pb-2 bg bg-primary btn-lg" style="width: 100px;color: white;" id = "vaibhav"> <i class="fas fa-lock"></i> Pay Now</a>
                 <p style="color: grey; text-align: center;">By clicking on proceed to payment, you agree to our <a href="#" style="color: gray;">Terms and Conditions</a></p>
              </form>
             </form>
@@ -631,7 +631,12 @@
     // for(var i = 0 ; i < total)
     document.getElementById('subTotal').textContent="₹"+ subtotal;
     document.getElementById('Total').textContent="₹"+ Number(99+subtotal);
+    document.querySelector('#vaibhav').addEventListener('click',function(){
 
+        alert("Order Successful",  window.location.href="women_home.html");
+        // window.location.href="women_home.html";
+
+    });
 
 
   
