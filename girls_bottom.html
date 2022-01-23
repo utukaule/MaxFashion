@@ -351,9 +351,9 @@
 
 
          
-          var wish_btn = document.createElement("button");
+          var wish_btn = document.createElement("p");
             wish_btn.setAttribute("id", "wish_btn");
-            wish_btn.textContent = "ADD TO WISHLIST";
+            wish_btn.innerHTML = '<i class="far fa-heart" style="font-size: 25px;"></i>';
             wish_btn.addEventListener("click", function(){
                 add_to_wishlist(item);
             })
