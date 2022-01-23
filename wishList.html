@@ -121,7 +121,7 @@
             div_mid.setAttribute('id', 'mid');
             var size = document.createElement("select");
             size.setAttribute('class','form-select')
-            size.style.width = "30%"
+            size.style.width = "60%"
             size.style.height = "40px";
             size.style.margin = '39px 0px 0px 0px';
 
@@ -153,10 +153,19 @@
                 deleteItem(index);
             });
 
+            var  add = document.createElement('button');
+            add.textContent = 'Add To Cart';
+            add.style.margin = '39px 0px 0px 20px';
+            add.style.fontSize = '10px';
+            add.style.color = 'blue';
+            add.style.fontWeight = '500';
+            add.style.width = '170px';
+            add.style.border = 'none';
+
             var a = document.createElement('a');
 
 
-            div_mid.append(size, remove1)
+            div_mid.append(size, remove1,add)
 
             td2.append(name, div_mid);
             //mid ends
