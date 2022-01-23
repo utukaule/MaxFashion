@@ -25,7 +25,9 @@
 
 </head>
 <body>
+
     <div id="header"></div>
+
     <h1 id="heading">Tops</h1>
     <div id="ctg_container">
         <div>
@@ -320,18 +322,18 @@
             var btn_div = document.createElement("div");
             btn_div.setAttribute("id", "btn_div");            
 
-            var wish_btn = document.createElement("p");
-            wish_btn.setAttribute("id", "wish_btn");
-            wish_btn.innerHTML = '<i class="far fa-heart" style="font-size: 25px;"></i>';
-            wish_btn.addEventListener("click", function(){
-                add_to_wishlist(item);
+            var cart_btn = document.createElement("button");
+            cart_btn.setAttribute("id", "cart_btn");
+            cart_btn.textContent = "ADD TO BASKET";
+            cart_btn.addEventListener('click', function(){
+                addToCart(item);
             })
 
 
 
-            var wish_btn = document.createElement("button");
+            var wish_btn = document.createElement("p");
             wish_btn.setAttribute("id", "wish_btn");
-            wish_btn.textContent = "ADD TO WISHLIST";
+            wish_btn.innerHTML = '<i class="far fa-heart" style="font-size: 25px;"></i>';
             wish_btn.addEventListener("click", function(){
                 add_to_wishlist(item);
             })
