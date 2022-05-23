@@ -30,10 +30,12 @@ The Max Fashion website is an online web application that caters to clothes for 
 # About Website :
 
 **Landing page**
-![MLAnding](https://user-images.githubusercontent.com/97450767/169752904-7f9d0f0f-2cd6-45af-9154-fb522037750c.png)
 
 
 ![Mlanding2](https://user-images.githubusercontent.com/97450767/169753033-7cdb19dd-7764-4893-aba0-998c4fdecd06.png)
+
+
+![MLAnding](https://user-images.githubusercontent.com/97450767/169752904-7f9d0f0f-2cd6-45af-9154-fb522037750c.png)
 
 
 **Cart page**
