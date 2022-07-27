@@ -69,8 +69,6 @@ Go to the project directory
 - [atin-sahu](https://github.com/atin-sahu)
 - [Vaibhav0702](https://github.com/Vaibhav0702)
 - [keshavGaur053](https://github.com/keshavGaur053)
-- [keshavGaur053](https://github.com/keshavGaur053)
-
 
 ## Feedback
 
